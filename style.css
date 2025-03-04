@@ -1,0 +1,124 @@
+:root {
+  --hover-color: rgb(60, 87, 38);
+  --link-focus-color: rgb(71, 131, 22);
+  --box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.192);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.06rem;
+  line-height: 1.5;
+}
+
+html, body {
+  min-height: 100vh;
+  display: flex;
+}
+
+a {
+  color: var(--link-focus-color);
+  transition: color 0.5s;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+p {
+  font-size: 1.2rem;
+  width: 80%;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  background-color: var(--link-focus-color);
+  transition: background-color 0.5s;
+  padding: 6px 20px 6px 20px;
+  color: white;
+  font-size: 0.9rem;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 20px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+input {
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 0.7rem;
+  border: solid gray 1px;
+  outline: none;
+}
+
+.logo {
+  font-family: "Poppins", cursive;
+  font-size: 3vw;
+  position: relative;
+  top: 30vh;
+  background-color: rgba(0, 0, 0, 0.397);
+  text-align: center;
+}
+
+.logo-container {
+  min-width: 40vw;
+  height: 100%;
+  background-image: url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-container {
+  min-width: 60vw;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(245, 245, 245);
+}
+
+.mid-section {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.158);
+}
+
+.top-section, .bottom-section, .mid-section {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0 50px 50px;
+}
+
+.data-row {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+}

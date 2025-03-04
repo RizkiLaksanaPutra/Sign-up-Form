@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="logo-container">
+      <h1 class="logo">Natural Springs</h1>
+    </div>
+    <div class="form-container">
+      <div class="top-section">
+        <p>
+          This is not real service! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Vero neque impedit a amet quaerat voluptates
+          eligendi. Officia nulla illo aliquid.
+        </p>
+      </div>
+      <form action="#">
+        <div class="mid-section">
+          <h2>Create your account now!</h2>
+          <div class="data-row">
+            <div class="data">
+              <label for="first-name">*First Name</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                minlength="2"
+                maxlength="20"
+                placeholder="Rizki"
+                required
+              />
+            </div>
+            <div class="data">
+              <label for="last-name">*Last Name</label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                minlength="2"
+                maxlength="20"
+                placeholder="Laksana Putra"
+                required
+              />
+            </div>
+          </div>
+          <div class="data-row">
+            <div class="data">
+              <label for="email">*Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                minlength="3"
+                maxlength="50"
+                placeholder="john@smith.com"
+                required
+              />
+            </div>
+            <div class="data">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="tel"
+                name="tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="555-555-5555"
+              />
+            </div>
+          </div>
+          <div class="data-row">
+            <div class="data">
+              <label for="password">*Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                minlength="6"
+                maxlength="20"
+                placeholder=" "
+                required
+              />
+              <span id="passError"></span>
+            </div>
+            <div class="data">
+              <label for="confirm-password">*Confirm Password</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                minlength="6"
+                maxlength="20"
+                placeholder=" "
+                required
+              />
+              <span id="confirmError"></span>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-section">
+          <button type="submit">Create Account</button>
+          <p>Already have an account? <a href="">Log in</a></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
